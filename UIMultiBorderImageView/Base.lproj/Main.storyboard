@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UIMultiBorderImageView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prague" translatesAutoresizingMaskIntoConstraints="NO" id="chF-31-xCJ">
+                                <rect key="frame" x="87.5" y="374" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="LL9-iA-Yvn"/>
+                                    <constraint firstAttribute="width" constant="200" id="wqv-4t-99i"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="prague" translatesAutoresizingMaskIntoConstraints="NO" id="JXe-Yj-lyy">
+                                <rect key="frame" x="87.5" y="144" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="TmC-Lo-ffU"/>
+                                    <constraint firstAttribute="height" constant="200" id="zGc-aR-L0N"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="JXe-Yj-lyy" firstAttribute="centerX" secondItem="chF-31-xCJ" secondAttribute="centerX" id="S3W-Yc-5WI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="chF-31-xCJ" secondAttribute="bottom" constant="93" id="ZoV-PH-tay"/>
+                            <constraint firstItem="chF-31-xCJ" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="mpS-Vf-fzM"/>
+                            <constraint firstItem="JXe-Yj-lyy" firstAttribute="leading" secondItem="chF-31-xCJ" secondAttribute="leading" id="no8-vc-BFx"/>
+                            <constraint firstItem="chF-31-xCJ" firstAttribute="top" secondItem="JXe-Yj-lyy" secondAttribute="bottom" constant="30" id="vFU-YZ-DJy"/>
+                            <constraint firstItem="JXe-Yj-lyy" firstAttribute="trailing" secondItem="chF-31-xCJ" secondAttribute="trailing" id="xJi-Nj-jpB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="bottomImageView" destination="chF-31-xCJ" id="y9h-yv-FKf"/>
+                        <outlet property="topImageView" destination="JXe-Yj-lyy" id="bpb-zp-Rva"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53.600000000000001" y="54.422788605697157"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="prague" width="968" height="681"/>
+    </resources>
+</document>
